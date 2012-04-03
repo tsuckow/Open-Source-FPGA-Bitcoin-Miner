@@ -1,0 +1,162 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Open-source-fpga-bitcoin-miner</title>
+  <meta name="description" content="Open Source Bitcoin Mining Firmware and Software for Altera and Xilinx FPGAs.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Open-source-fpga-bitcoin-miner</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Open Source Bitcoin Mining Firmware and Software for Altera and Xilinx FPGAs.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/fpgaminer/Open-Source-FPGA-Bitcoin-Miner/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/fpgaminer/Open-Source-FPGA-Bitcoin-Miner/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/fpgaminer/Open-Source-FPGA-Bitcoin-Miner" class="code">fork Open-source-fpga-bitcoin-miner on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h2>Purpose</h2>
+
+<p>To promote the free and open development of an FPGA based Bitcoin mining solution.</p>
+
+<p><a href="http://www.weusecoins.com/">http://www.weusecoins.com/</a></p>
+
+<p><a href="http://bitcoin.org/">http://bitcoin.org/</a></p>
+
+<h2>Project Status</h2>
+
+<p>Project is fully functional and allows mining of Bitcoins both in a Pool and Solo.
+It also supports Namecoins.</p>
+
+<p><strong>Current Performance:</strong> 109 MHash/s
+On a Terasic DE2-115 Development Board</p>
+
+<p><em>Note: The pre-built firmware, and source files, are built for 50 MHash/s performance (downclocked). This is meant to prevent damage to your valuable chip if you don't provide an appropriate cooling solution.</em></p>
+
+<h2>Supported Devices</h2>
+
+<p>Both Xilinx and Altera devices are currently supported. A binary configuration file and tools
+are provided for the Terasic DE2-115 Development Board, so it is easy to get up and running
+with that board. For other devices, you can modify and compile the correct projects for your
+specific development board.</p>
+
+<h2>Installation Instructions (for Terasic DE2-115)</h2>
+
+<h3>Required Equipment:</h3>
+
+<ul>
+<li>DE2-115 Development Kit (this is <em>not</em> a DE2. It has a Cyclone IV EP4CE115.)</li>
+<li>USB Cable</li>
+<li>Windows PC (Linux is also supported, but not documented)</li>
+<li>Altera's Quartus II (installed on PC)</li>
+</ul><h3>Instructions:</h3>
+
+<h4>Do These Once:</h4>
+
+<p>1) <em>IMPORTANT</em>: Please remove the clear acrylic cover on your DE2-115 board. This will restrict
+air flow and may cause the chip to overheat.</p>
+
+<p>2) Navigate to 'scripts/mine' and follow the instructions in 'config.example.tcl' (open in Notepad or other text editor)</p>
+
+<h4>Do these each time you want to run the miner:</h4>
+
+<p>1) Connect the DE2-115 Development Kit to your PC through USB, connect its power, and turn it on.</p>
+
+<p>2) Ensure that the DE2-115's drivers have been installed successfully on your PC.
+Consult the DE2-115 User Guide for more information on setting up the DE2-115.</p>
+
+<p>3) Navigate to 'scripts/program' and run 'program-fpga-board.bat'.</p>
+
+<p>4) Follow the instructions provided by the program-fpga-board script.
+Select the correct cable and programming file.
+Once programming has succeeded, the DE2-115 is now ready to mine!</p>
+
+<p><em>Note: This script sometimes fails immediately upon execution. Please try running it again.</em></p>
+
+<p>5) Run 'mine.bat'</p>
+
+<p>6) If working correctly, 'mine.bat' will leave a console window open where it reports hashing rate, estimated hashing rate and accepted/rejected share information.</p>
+
+<p>7) Profit!</p>
+
+<h4>Notes:</h4>
+
+<ul>
+<li>You need to re-program the DE2-115 every time it is powered off and on again. Repeat steps 1 through 7 for subsequent uses.</li>
+<li>Your PC needs to stay on and connected to the internet. It is acting like a controller for the FPGA,
+feeding it data and getting back valid hashes.</li>
+</ul><h2>Thank You!</h2>
+
+<hr><h2>Contributors</h2>
+
+<p>These people have worked hard to enhance and promote the Open-Source FPGA Bitcoin Miner
+project:
+<em>Not listed in any particular order</em></p>
+
+<p><strong>teknohog</strong>
+1HkL2iLLQe3KJuNCgKPc8ViZs83NJyyQDM</p>
+
+<p><strong>OrphanedGland</strong>
+1PioyqqFWXbKryxysGqoq5XAu9MTRANCEP</p>
+
+<p><strong>udif</strong></p>
+
+<p><strong>TheSeven</strong>
+14Jc8vWq1mPv7vWnP5VquZZgpLEtzW2vja</p>
+
+<p><strong>makomk</strong>
+15XX7BhQcZFUg47S4VKyiLygPTHTs9234J</p>
+
+<p><strong>newMeat1</strong>
+1LbqTCA1cnpbbdKbXzZZfHYMe7teiczQc2</p>
+
+<p>fpgaminer@bitcoin-mining.com
+Donation Address: 1E1XgiJAzm1Wn7ZWuhkryzBoViBJ7CcRCQ</p>
+
+<p>Donations are most welcome! They will be used to buy more equipment like FPGAs and computers to speed up firmware compilations.</p>
+
+<hr><p>Copyright (C) 2011-2012 fpgaminer@bitcoin-mining.com</p>
+
+<p>See LICENSE.txt</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/fpgaminer" class="avatar"><img src="https://secure.gravatar.com/avatar/dd62ee36ad724e8ad2a95970de252380?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/fpgaminer">fpgaminer</a> maintains <a href="https://github.com/fpgaminer/Open-Source-FPGA-Bitcoin-Miner">Open-source-fpga-bitcoin-miner</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/fpgaminer/Open-Source-FPGA-Bitcoin-Miner/tarball/master" class="tar">tar</a><a href="https://github.com/fpgaminer/Open-Source-FPGA-Bitcoin-Miner/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
